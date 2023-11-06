@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import rhenus_img from '../src/img/Welcome.png';
-import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Link, Redirect, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Form, FormControl, Button, Overlay,Alert } from 'react-bootstrap';
 import users from './testUsers';
 import Welcome from './welcome';
+
 
 function App() {
   const [username, setUsername] = useState('');
@@ -13,6 +14,7 @@ function App() {
   const [message, setMessage] = useState('');
   const [showPopover, setShowPopover] = useState(false);
   const [redirectToWelcome, setRedirectToWelcome] = useState(false);
+  const navigate = useNavigate();
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -22,7 +24,7 @@ function App() {
 
     if (user) {
       setMessage('User successfully logged in.');
-      setRedirectToWelcome(true);
+      navigate('/welcome');
 
       // Automatically close the popover after 3 seconds
       setTimeout(() => {
