@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/MiguelLouisLeRoux/rhenus/static/css/main.a6018f21.css",
+    "main.js": "/MiguelLouisLeRoux/rhenus/static/js/main.5138e64e.js",
+    "static/js/787.a35daaf0.chunk.js": "/MiguelLouisLeRoux/rhenus/static/js/787.a35daaf0.chunk.js",
+    "static/media/Welcome.png": "/MiguelLouisLeRoux/rhenus/static/media/Welcome.e19a59eaed6caa1a4f93.png",
+    "static/media/dashboard.png": "/MiguelLouisLeRoux/rhenus/static/media/dashboard.ab65fd0058da82657f81.png",
+    "static/media/RhenusLogistics.png": "/MiguelLouisLeRoux/rhenus/static/media/RhenusLogistics.4efac2be74b317acba70.png",
+    "index.html": "/MiguelLouisLeRoux/rhenus/index.html",
+    "main.a6018f21.css.map": "/MiguelLouisLeRoux/rhenus/static/css/main.a6018f21.css.map",
+    "main.5138e64e.js.map": "/MiguelLouisLeRoux/rhenus/static/js/main.5138e64e.js.map",
+    "787.a35daaf0.chunk.js.map": "/MiguelLouisLeRoux/rhenus/static/js/787.a35daaf0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6018f21.css",
+    "static/js/main.5138e64e.js"
+  ]
+}
