@@ -4,10 +4,23 @@
   --purple: #8c52ff;
 }
 
+h1{
+  font-weight: bolder;
+  font-size: 42px;
+  color: #424691;
+}
+
 h2{
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
   color: #595f6c;
+}
+
+h3{
+  font-weight: bolder !important;
+  font-weight: bolder;
+  padding: 5px 0 0 0;
+  color: var(--primaryBlue);
 }
 
 h6{
@@ -51,15 +64,36 @@ h6{
   height: 100vh;
 }
 
+.rhenusLogisticsImg{
+  width: auto;
+  height: auto;
+}
+
+.dashboardImg{
+  width:auto;
+  height: auto;
+}
+
 .submitBtn{
   background-color: var(--primaryBlue);
   border: solid var(--primaryBlue);
   padding: 8px 0;
   width: 70%;
-  
 }
 
 .submitBtn:hover{
+  background-color: var(--primaryBlue);
+}
+
+.dashboardBtn{
+  background-color: var(--primaryBlue);
+  border: solid var(--primaryBlue);
+  padding: 8px 0;
+  margin: 1rem;
+  width: 40%;
+}
+
+.dashboardBtn:hover{
   background-color: var(--primaryBlue);
 }
 
