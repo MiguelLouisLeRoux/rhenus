@@ -29,12 +29,6 @@ function Welcome() {
           optimize your operations, and propel your business to new heights.</p>
         </div>
         <div className='d-flex flex-wrap'>
-          {/* <Button variant="primary" className='dashboardBtn' type="submit">Dashboard 1</Button>
-          <Button variant="primary" className='dashboardBtn' type="submit">Dashboard 2</Button>
-          <Button variant="primary" className='dashboardBtn' type="submit">Dashboard 3</Button>
-          <Button variant="primary" className='dashboardBtn' type="submit">Dashboard 4</Button>
-          <Button variant="primary" className='dashboardBtn' type="submit">Dashboard 5</Button>
-          <Button variant="primary" className='dashboardBtn' type="submit">Dashboard 6</Button>    */}
           {dashboards.map((dashboard, index) => (
             <Button
               key={index}
