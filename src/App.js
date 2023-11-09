@@ -32,37 +32,61 @@ function App() {
   };
   return (
     <div className="App">
+      
       <div id='check' className='d-flex justify-content-between align-items-center'>
         <div className='col-5 p-5'>
-          <div className='mb-5'>
-          
-            <h2>Sign In To Your Account</h2>
-            <h6>RHENNUS LOGISTICS CUSTOMER REPORTS</h6>
-            <br/>
-          </div> 
-          <Overlay
-            show={showPopover}
-            target={document.getElementById('popover-target')}
-            placement="top-start"
-            transition={true}
-          > 
-            <Alert variant={message.includes('successfully') ? 'success' : 'danger'}>
-              {message}
-            </Alert>        
-          </Overlay>
-          <Form className="text-center" onSubmit={handleFormSubmit}>
-            <Form.Group>
-              <FormControl value={username} onChange={(e) => setUsername(e.target.value)} type="text" placeholder="Username" className="inputStyle"/>
-            </Form.Group>
-            <br/>
-            <Form.Group>
-              <FormControl  value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Password" className="inputStyle"/>
-            </Form.Group>
-            <br/>
-            <Button variant="primary" className='submitBtn' type="submit">
-              Sign In
-            </Button>
-          </Form>
+        <div id='overlay'></div>
+        <br/>
+        <Overlay
+          show={showPopover}
+          target={document.getElementById('overlay')}
+          placement="top-end"
+          transition={false}
+        > 
+          <Alert variant={message.includes('successfully') ? 'success' : 'danger'}>
+            {message}
+          </Alert>        
+        </Overlay>
+        <div className='mb-5'>
+          <h2>Sign In To Your Account</h2>
+          <h6>RHENNUS LOGISTICS CUSTOMER REPORTS</h6>
+          <br/>
+        </div> 
+        <Form className="text-center" onSubmit={handleFormSubmit}>
+          <Form.Group>
+            <FormControl 
+              value={username} 
+              onChange={(e) => setUsername(e.target.value)} 
+              type="text" 
+              placeholder="Username" 
+              className="inputStyle"
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  handleFormSubmit(e);
+                }
+              }}
+              />
+          </Form.Group>
+          <br/>
+          <Form.Group>
+            <FormControl 
+              value={password}
+              onChange={(e) => setPassword(e.target.value)} 
+              type="password" 
+              placeholder="Password" 
+              className="inputStyle"
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  handleFormSubmit(e);
+                }
+              }}
+              />
+          </Form.Group>
+          <br/>
+          <Button variant="primary" className='submitBtn' type="submit">
+            Sign In
+          </Button>
+        </Form>
         </div>
         <div className='col-7'>
           <img className='rhenusImg' src={rhenus_img} alt='rhenus_img'/>

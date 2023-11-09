@@ -10,7 +10,7 @@ function Dashboard() {
     const { dashboardValue } = useParams();
     const navigate = useNavigate();
     const handleGoBack = () => {
-        navigate(-1); // Navigate back to the previous view
+        navigate(-1); 
       };
 
     return (
