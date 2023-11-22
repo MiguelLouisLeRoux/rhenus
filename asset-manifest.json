@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/rhenus/static/css/main.ea0a676a.css",
-    "main.js": "/rhenus/static/js/main.7e9e5cff.js",
+    "main.js": "/rhenus/static/js/main.780417e1.js",
     "static/js/787.a35daaf0.chunk.js": "/rhenus/static/js/787.a35daaf0.chunk.js",
     "static/media/Welcome.png": "/rhenus/static/media/Welcome.e19a59eaed6caa1a4f93.png",
     "static/media/dashboard.png": "/rhenus/static/media/dashboard.ab65fd0058da82657f81.png",
     "static/media/RhenusLogistics.png": "/rhenus/static/media/RhenusLogistics.4efac2be74b317acba70.png",
     "index.html": "/rhenus/index.html",
     "main.ea0a676a.css.map": "/rhenus/static/css/main.ea0a676a.css.map",
-    "main.7e9e5cff.js.map": "/rhenus/static/js/main.7e9e5cff.js.map",
+    "main.780417e1.js.map": "/rhenus/static/js/main.780417e1.js.map",
     "787.a35daaf0.chunk.js.map": "/rhenus/static/js/787.a35daaf0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ea0a676a.css",
-    "static/js/main.7e9e5cff.js"
+    "static/js/main.780417e1.js"
   ]
 }
