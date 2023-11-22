@@ -8,7 +8,7 @@ import Dashboard from './dashboard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/rhenus">
     <React.StrictMode>
       <Routes>
         <Route path="/" element={<App />} />
